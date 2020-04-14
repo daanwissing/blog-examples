@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -14,6 +14,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProcessFile\ProcessFile.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+      <None Include="TestFiles/TestFile.csv" CopyToOutputDirectory="PreserveNewest" />
+      <EmbeddedResource Include="TestFiles/TestFileEmbedded.csv" CopyToOutputDirectory="None" />
   </ItemGroup>
 
 </Project>
