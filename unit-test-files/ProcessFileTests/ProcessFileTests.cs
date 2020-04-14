@@ -7,7 +7,7 @@ namespace Tests
     public class Tests
     {
         [Test]
-        public void Test1()
+        public void GivenFile_WhenProcess_ThenResult()
         {
             // Given
             var target = new ProcessFile.ProcessFile();
