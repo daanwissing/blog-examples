@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Test Comments</Title>
+      <Author>DWIG</Author>
+      <Description>Insert Arrange/Act/Assert groups in unit test function</Description>
+      <Shortcut>unittest</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[[Test]
+        public void Given$context$_When$action$_Then$result$()
+        {
+          // Arrange
+        
+          // Act
+        
+          // Assert
+        }]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>context</ID>
+          <Default>Context</Default>
+          <ToolTip>The context of this unit test</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>action</ID>
+          <Default>Action</Default>
+          <ToolTip>The action that is tested</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>result</ID>
+          <Default>Result</Default>
+          <ToolTip>The resulting state that will be asserted</ToolTip>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>NUnit.Framework</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
